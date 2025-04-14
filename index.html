@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Es Teh Poci Citra Rasa - Minuman Segar Khas Magelang</title>
+    <meta name="description"
+        content="Es Teh Poci segar dengan berbagai varian rasa premium. Minuman kekinian dengan harga terjangkau di Magelang.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Es Teh Poci <span>Citra Rasa</span></h1>
+                <p class="tagline">Segarnya Teh, Manisnya Rasa</p>
+                <img src="assets/Logo Es Teh.png" alt="" class="logoGambar">
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="mainNav">
+                <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="#about"><i class="fas fa-info-circle"></i> Tentang</a>
+                <a href="#produk"><i class="fas fa-list-alt"></i> Menu</a>
+                <a href="#cabang"><i class="fas fa-map-marker-alt"></i> Cabang</a>
+                <a href="#testimoni"><i class="fas fa-comments"></i> Testimoni</a>
+                <a href="#kontak"><i class="fas fa-phone-alt"></i> Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Segarkan Harimu dengan Es Teh Poci</h2>
+                <p>Minuman teh premium dengan berbagai varian rasa yang menggugah selera. Dibuat dengan bahan pilihan
+                    untuk kesegaran yang maksimal.</p>
+                <div class="cta-buttons">
+                    <a href="#produk" class="btn primary">Lihat Menu</a>
+                    <a href="#cabang" class="btn secondary">Cari Cabang</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                    alt="Es Teh Poci Segar" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    alt="Proses Pembuatan Teh" loading="lazy">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">Kenapa Memilih <span>Es Teh Poci Kami?</span></h2>
+                <p>Es Teh Poci Citra Rasa hadir sebagai minuman kekinian yang menyegarkan dengan cita rasa khas. Kami
+                    menggunakan daun teh pilihan dan bahan-bahan premium untuk memberikan pengalaman minum teh yang
+                    berbeda.</p>
+
+                <div class="features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Teh Berkualitas</h3>
+                        <p>Menggunakan daun teh pilihan dari perkebunan terbaik</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Sehat & Segar</h3>
+                        <p>Tanpa pengawet dan bahan kimia berbahaya</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h3>Harga Terjangkau</h3>
+                        <p>Kualitas premium dengan harga yang ramah di kantong</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Banyak Cabang</h3>
+                        <p>Tersedia di 6 lokasi strategis di Magelang</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="produk">
+        <div class="container">
+            <h2 class="section-title">Menu <span>Kami</span></h2>
+            <p class="section-subtitle">Pilih varian favoritmu dari berbagai pilihan rasa yang kami tawarkan</p>
+
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Semua</button>
+                <button class="category-btn" data-category="original">Original</button>
+                <button class="category-btn" data-category="susu">Varian Susu</button>
+                <button class="category-btn" data-category="buah">Varian Buah</button>
+                <button class="category-btn" data-category="spesial">Spesial</button>
+            </div>
+
+            <div class="menu-items">
+                <!-- Original -->
+                <div class="menu-item" data-category="original">
+                    <div class="item-header">
+                        <h3>Original</h3>
+                        <div class="price">Rp3.000 <span>/ Rp4.000</span></div>
+                    </div>
+                    <p>Es teh original dengan rasa alami daun teh pilihan</p>
+                </div>
+
+                <div class="menu-item" data-category="original">
+                    <div class="item-header">
+                        <h3>Vanilla</h3>
+                        <div class="price">Rp3.000 <span>/ Rp4.000</span></div>
+                    </div>
+                    <p>Es teh dengan aroma vanilla yang harum</p>
+                </div>
+
+                <!-- Varian Susu -->
+                <div class="menu-item" data-category="susu">
+                    <div class="item-header">
+                        <h3>Milk Tea</h3>
+                        <div class="price">Rp4.500 <span>/ Rp5.500</span></div>
+                    </div>
+                    <p>Perpaduan sempurna teh dan susu segar</p>
+                </div>
+
+                <div class="menu-item" data-category="susu">
+                    <div class="item-header">
+                        <h3>Milo</h3>
+                        <div class="price">Rp5.000 <span>/ Rp6.000</span></div>
+                    </div>
+                    <p>Teh dengan tambahan milo yang nikmat</p>
+                </div>
+
+                <div class="menu-item" data-category="susu">
+                    <div class="item-header">
+                        <h3>Milo Oreo</h3>
+                        <div class="price">Rp6.500 <span>/ Rp7.500</span></div>
+                    </div>
+                    <p>Kombinasi milo dan crumble oreo yang lezat</p>
+                </div>
+
+                <!-- Varian Buah -->
+                <div class="menu-item" data-category="buah">
+                    <div class="item-header">
+                        <h3>Leci</h3>
+                        <div class="price">Rp4.000 <span>/ Rp5.000</span></div>
+                    </div>
+                    <p>Es teh dengan rasa buah leci yang menyegarkan</p>
+                </div>
+
+                <div class="menu-item" data-category="buah">
+                    <div class="item-header">
+                        <h3>Mangga</h3>
+                        <div class="price">Rp4.000 <span>/ Rp5.000</span></div>
+                    </div>
+                    <p>Rasa mangga alami yang manis dan segar</p>
+                </div>
+
+                <!-- Varian Spesial -->
+                <div class="menu-item highlight" data-category="spesial">
+                    <div class="item-header">
+                        <h3>Milo Oreo Susu</h3>
+                        <div class="price">Rp7.500 <span>/ Rp9.000</span></div>
+                    </div>
+                    <p>Favorit pelanggan! Kombinasi milo, oreo dan susu segar</p>
+                    <div class="badge">Best Seller</div>
+                </div>
+
+                <!-- Tambahkan item menu lainnya sesuai data sebelumnya -->
+            </div>
+        </div>
+    </section>
+
+    <section class="branches-section" id="cabang">
+        <div class="container">
+            <h2 class="section-title">Cabang <span>Kami</span></h2>
+            <p class="section-subtitle">Temukan lokasi terdekat untuk menikmati Es Teh Poci Citra Rasa</p>
+
+            <div class="branches-container">
+                <div class="branch-card">
+                    <div class="branch-image">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3955.951574827187!2d110.21512507500181!3d-7.470599992541085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMjgnMTQuMiJTIDExMMKwMTMnMDMuNyJF!5e0!3m2!1sid!2sid!4v1744624161018!5m2!1sid!2sid"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="branch-info">
+                        <h3>Cabang Plengkung</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Pierre Tendean, depan SMKN 2 Magelang</p>
+                        <p><i class="fas fa-clock"></i> Buka setiap hari 09.00 - 21.00 WIB</p>
+                        <a href="https://maps.google.com/?q=-7.4706,110.2177" target="_blank" class="btn small"><i
+                                class="fas fa-directions"></i> Petunjuk Arah</a>
+                    </div>
+                </div>
+
+                <div class="branch-card">
+                    <div class="branch-image">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3955.9253136677266!2d110.21632507500188!3d-7.47349999253827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMjgnMjQuNiJTIDExMMKwMTMnMDguMCJF!5e0!3m2!1sid!2sid!4v1744624100161!5m2!1sid!2sid"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="branch-info">
+                        <h3>Cabang Universitas Tidar</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Kapten Suparman, dekat Universitas Tidar</p>
+                        <p><i class="fas fa-clock"></i> Buka setiap hari 08.00 - 22.00 WIB</p>
+                        <a href="https://maps.google.com/?q=-7.4735,110.2189" target="_blank" class="btn small"><i
+                                class="fas fa-directions"></i> Petunjuk Arah</a>
+                    </div>
+                </div>
+
+                <!-- Tambahkan cabang lainnya -->
+            </div>
+
+            <div class="all-branches">
+                <h4>Lokasi Cabang Lainnya:</h4>
+                <ul>
+                    <li><i class="fas fa-store"></i> Jl. Pahlawan, depan SMPN 1 Kota Magelang</li>
+                    <li><i class="fas fa-store"></i> Jl. Jeruk Raya, depan RSI Magelang</li>
+                    <li><i class="fas fa-store"></i> Jl. Dr. Wahidin, samping SDN 3 Potrobangsan</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section" id="testimoni">
+        <div class="container">
+            <h2 class="section-title">Apa Kata <span>Pelanggan?</span></h2>
+            <p class="section-subtitle">Testimoni dari mereka yang sudah mencoba Es Teh Poci Citra Rasa</p>
+
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Rasanya segar banget! Aku suka banget varian Milo Oreo Susu-nya.
+                        Harganya juga terjangkau untuk kualitas premium seperti ini."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Dinda" loading="lazy">
+                        <div>
+                            <h4>Dinda</h4>
+                            <p>Mahasiswa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"Tempatnya strategis dan pelayanannya cepat. Saya sering beli setelah
+                        pulang kerja. Teh originalnya benar-benar terasa daun teh aslinya."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Budi" loading="lazy">
+                        <div>
+                            <h4>Budi</h4>
+                            <p>Karyawan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Anak-anak saya suka banget es teh poci ini. Saya sebagai ibu merasa
+                        aman karena tidak pakai bahan pengawet. Sekarang jadi langganan tiap minggu."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ibu Rani" loading="lazy">
+                        <div>
+                            <h4>Ibu Rani</h4>
+                            <p>Ibu Rumah Tangga</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="kontak">
+        <div class="container">
+            <div class="contact-info">
+                <h2 class="section-title">Hubungi <span>Kami</span></h2>
+                <p class="section-subtitle">Pesan sekarang atau tanya informasi lebih lanjut</p>
+
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Telepon</h4>
+                        <p>+62 812-3456-7890</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>+62 812-3456-7890</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@estehpocicirarasa.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Jam Operasional</h4>
+                        <p>Senin - Minggu: 08.00 - 22.00 WIB</p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="pesanForm">
+                    <h3>Pesan Sekarang</h3>
+                    <div class="form-group">
+                        <input type="text" id="nama" placeholder="Nama Lengkap" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telepon" placeholder="Nomor Telepon" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="cabang" required>
+                            <option value="">Pilih Cabang</option>
+                            <option value="Plengkung">Cabang Plengkung</option>
+                            <option value="Tidar">Cabang Universitas Tidar</option>
+                            <option value="Pahlawan">Cabang Jl. Pahlawan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="pesan" placeholder="Pesan atau catatan khusus" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <h3>Es Teh Poci <span>Citra Rasa</span></h3>
+                <p>Segarnya Teh, Manisnya Rasa</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="links-column">
+                    <h4>Menu</h4>
+                    <a href="#produk">Varian Original</a>
+                    <a href="#produk">Varian Susu</a>
+                    <a href="#produk">Varian Buah</a>
+                    <a href="#produk">Varian Spesial</a>
+                </div>
+
+                <div class="links-column">
+                    <h4>Lokasi</h4>
+                    <a href="#cabang">Cabang Plengkung</a>
+                    <a href="#cabang">Cabang Tidar</a>
+                    <a href="#cabang">Cabang Pahlawan</a>
+                    <a href="#cabang">Semua Lokasi</a>
+                </div>
+
+                <div class="links-column">
+                    <h4>Perusahaan</h4>
+                    <a href="#about">Tentang Kami</a>
+                    <a href="#testimoni">Testimoni</a>
+                    <a href="#">Karir</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Es Teh Poci Citra Rasa. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/6281234567890" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
